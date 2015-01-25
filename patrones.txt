@@ -1,0 +1,12 @@
+patrones:
+amor
+odio
+un padre
+agua
+aire
+desgracia
+edad
+ciudad
+pais
+los prejuicios
+enormes enigmas

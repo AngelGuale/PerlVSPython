@@ -11,7 +11,7 @@
 $file="textoPrueba1.txt";
 $texto = read_file($file);
 
-tie @patrones, 'Tie::File', "patronesFile.txt" or die;
+tie @patrones, 'Tie::File', "patronesFile.txt",recsep=>"\n" or die;
 
 sub buscaTodas{
 	$t=shift(@_);
@@ -26,6 +26,6 @@ sub buscaTodas{
 print "tiempo, long_patt\n, OS";
 foreach $patron(@patrones) {
 	$x=timeit(1,'&buscaTodas($texto, $patron);');
-	print $x->real, ",", length($patron),1;
+	print $x->real, ",", length($patron),0;
 	print "\n";
 }

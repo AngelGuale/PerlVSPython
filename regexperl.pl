@@ -22,10 +22,12 @@ sub buscaTodas{
 	
 	
 }
-
-print "tiempo, long_patt\n, OS";
+#lng 4 es perl
+#6 es linux
+#2 es total
+print "tiempo, long, tipoB, OS , lng\n";
 foreach $patron(@patrones) {
 	$x=timeit(1,'&buscaTodas($texto, $patron);');
-	print $x->real, ",", length($patron),",",1;
+	print ($x->real, ",", length($patron),",",1,",",4);
 	print "\n";
 }

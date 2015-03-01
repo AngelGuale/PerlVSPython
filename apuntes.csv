@@ -1,0 +1,21 @@
+comando; uso
+var(x);calcula la varianza
+plot(x,y,col=2); grafica x vs y
+points(x,y,col=3); grafica puntos
+boxplot(algo,agrup); graficocajas
+cor(x,y); correlacion para radio-intervalo
+cor(x,y,method="spearman"); ordinales kendall
+.7 a 1 fuerte 3-.69 moderada;0-29 ninguna
+cor.test(x,y); p<0.05 indica correlacion no es igual a cero
+glm(x~y); regresion generalizada
+t<-table(col1,col2);tablacontigencia variabl ord
+chisq.test(t);pruebaxi2 var ord, nom
+t.test(v1~agrp2niv); t independiente
+t.test(v1,v2); t dependiente
+print(model.tables(resultAOV, "menas", digit=3)); imprime medias
+tukeyHSD(aov); multiples comparaciones
+levene.test(V,agrup,location=c("mean")); homog varianz
+wilcox.test(v1,v2,paired=TRUE); t no parametrica
+wilcox.test(v1,v2,paired=FALSE); t no parametrica
+kruskal.test(X,grup); aov no parametr
+shapiro.test(X); norma

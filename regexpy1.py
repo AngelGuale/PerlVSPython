@@ -10,8 +10,7 @@ if __name__ == "__main__":
 			
 
 	lines = [line.rstrip('\n') for line in open("patronesFile.txt")];
-	print "tiempo, long_patt,OS";
+	print "tiempo, long, tipoB, OS,lng,tamTexto";
 	for patronstr in lines:
 		patron=re.compile(patronstr);
-		print  timeit.timeit("re.findall(patron, data)", setup="import re; from __main__ import  patron, data", number=1),",",len(patronstr),",",1;
-			
+		print  timeit.timeit("re.findall(patron, data)", setup="import re; from __main__ import  patron, data", number=1),",",len(patronstr),",",1,",",5;

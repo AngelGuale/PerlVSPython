@@ -8,8 +8,9 @@ diccionario=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n
 , "v", "w", "x", "y", "z", " "];
 
 texto="";
-total=100000000;
+total=10000000;
 for m in range(total):
 	import random
 	indice=int(random.randrange(27));
-	print "\b"+diccionario[indice],
+	texto=texto+diccionario[indice]
+print texto

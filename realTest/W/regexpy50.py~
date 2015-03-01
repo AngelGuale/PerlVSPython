@@ -13,4 +13,4 @@ if __name__ == "__main__":
 	print "tiempo, long, tipoB, OS,lng,tamTexto";
 	for patronstr in lines:
 		patron=re.compile(patronstr);
-		print  timeit.timeit("re.findall(patron, data)", setup="import re; from __main__ import  patron, data", number=1),",",len(patronstr),",",2,",",6,",",5,",",50;
+		print  timeit.timeit("re.findall(patron, data)", setup="import re; from __main__ import  patron, data", number=1),",",len(patronstr),",",2,",",7,",",5,",",50;
